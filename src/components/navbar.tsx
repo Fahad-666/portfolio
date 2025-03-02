@@ -12,7 +12,7 @@ export const Navbar = () => {
   const location = useLocation();
 
   return (
-    <HeroUINavbar className="hidden lg:block pl-[30%] bg-[rgba(0,0,0,0)]">
+    <HeroUINavbar className="lg:block pl-[30%] bg-[rgba(0,0,0,0)]">
         <NavbarContent>
 
           <NavbarItem>
