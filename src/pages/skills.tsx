@@ -88,7 +88,6 @@ const SkillsPage: React.FC = () => {
   return (
     <div className="skills-container">
       <header>
-        <div className="logo">Portfolio</div>
         <Navbar/>
       </header>
 

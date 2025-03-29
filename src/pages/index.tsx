@@ -1,30 +1,43 @@
-import * as ui from "@heroui/react"
+import * as ui from "@heroui/react";
 import { Navbar } from "../components/navbar";
 import "../styles/globals.css";
 import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
-    <div className="flex bg-[##0f0f1a] flex-col items-center h-screen w-full md:w-1/2 lg:w-screen p-4">
-      <Navbar/>
-      <div className="flex flex-row items-center content-center">
-        <p className="abosolute mt-[39%] mr-[18px] text-white sm:text-[28px] lg:text-[46px] font-bold">Hello! I'm</p>
-        <pre className="name-main mt-[40%] rounded-2xl p-[3px] bg-gradient-to-r from-lime-600 to-blue-600 text-white sm:text-[30px] lg:text-[46px] font-bold">
-          Fahad Asghar.
-        </pre>    
-      </div>
-      <div className="ml-[13%] flex flex-col">
-        <p className="index-p-info text-white max-w-[750px] mt-[50px]">
-          I'm a Software Developer specializing in creating Fully Responsive Applications in React + Python. I create beautiful, functional, and user-friendly digital experiences.
-        </p>
-        <Link to={"/projects"}>
-          <ui.Button variant="shadow" className="max-w-[150px] mt-[4%] view-my-work-index" color="warning">
-            View My Work
-          </ui.Button>
-        </Link>
+    <div className="flex flex-col items-center w-full min-h-screen p-4 bg-slate-900">
+      <Navbar />
+      
+      <div className="flex flex-col items-center justify-center flex-grow w-full max-w-6xl mx-auto">
+        <div className="flex flex-wrap items-center justify-center w-full mt-8 text-center md:text-left md:justify-start md:mt-0">
+          <p className="mr-2 text-2xl font-bold text-white md:text-3xl lg:text-5xl">
+            Hello! I'm
+          </p>
+          <div className="p-1 mt-2 rounded-2xl bg-gradient-to-r from-lime-600 to-blue-600 md:mt-0">
+            <span className="block px-2 text-2xl font-bold text-white md:text-3xl lg:text-5xl">
+              Fahad Asghar.
+            </span>
+          </div>
+        </div>
+        
+        <div className="flex flex-col items-center w-full max-w-3xl px-4 mt-8 md:items-start md:mt-12">
+          <p className="text-base text-center text-white md:text-left md:text-lg lg:text-xl">
+            I'm a Software Developer specializing in creating Fully Responsive Applications in React + Python. I create beautiful, functional, and user-friendly digital experiences.
+          </p>
+          
+          <Link to="/projects" className="mt-6 md:mt-8">
+            <ui.Button 
+              variant="shadow" 
+              color="warning"
+              className="px-6 py-2 text-sm md:text-base"
+            >
+              View My Work
+            </ui.Button>
+          </Link>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Index;

@@ -53,7 +53,6 @@ const AboutPage: React.FC = () => {
   return (
     <div className="container">
       <header>
-        <div className="logo">Portfolio</div>
         <Navbar />
       </header>
 
