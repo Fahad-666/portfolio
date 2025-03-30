@@ -1,29 +1,47 @@
-
 .about-info {
     font-family: "Poppins", sans-serif;
     font-size: 28px;
     font-weight: 400;
+    line-height: 1.5;
+    max-width: 800px;
 }
 
 .about-box {
-    margin-left: 1;
-    padding: 10%;
+    padding: 8%;
     background-color: white;
-    margin-left: 5%;
-    height: 500px;
-    border-color: black;
-    flex-direction: column;
-    border-width: 2px;
-    border-radius: 40px; 
+    height: auto;
+    border: 2px solid black;
+    border-radius: 40px;
     width: 90%;
-    margin-top: 10%; 
-    position: absolute; 
-    display: flex; 
+    max-width: 800px;
+    margin: 10% auto; /* Centered without absolute positioning */
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-button {
     margin-top: 20px;
     font-family: 'Poppins', sans-serif;
+    padding: 12px 24px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .about-info {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .about-box {
+        width: 95%;
+        padding: 10%;
+    }
+
+    .contact-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
 }

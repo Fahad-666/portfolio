@@ -1,10 +1,15 @@
 .what-i-do {
     font-family: 'Poppins', sans-serif;
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: center;
     color: #000BFF;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 36px;
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out;
+}
+
+.what-i-do:hover {
+    transform: scale(1.05);
 }
 
 .cards {
@@ -12,33 +17,52 @@
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    margin-top: 30vh;
+    margin-top: 8vh;
     width: 100%;
+    padding: 0 5%;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 90%;
-    max-width: 1200px;
+/* Card Animation */
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Text Container */
 .card-text {
     max-width: 600px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
 @media (max-width: 1024px) {
-    .flex-container {
+    .cards {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
 
     .card-text {
         max-width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .what-i-do {
+        font-size: 28px;
+    }
+
+    .card-text {
+        font-size: 16px;
     }
 }

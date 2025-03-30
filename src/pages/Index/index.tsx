@@ -5,19 +5,21 @@ import { Link } from "react-router-dom";
 
 function Index() {
   return (
-    <div className="w-screen h-screen bg-gradient-to-b from-white to-blue-600">
+    <div className="flex flex-col items-center w-screen min-h-screen bg-gradient-to-b from-white to-blue-600">
       <Navbar />
 
       <div className="about-box">
-        <p className="about-info">Hi, I'm Fahad, a software developer specializing in AI & web applications.
-        Currently building AI-driven products and working on freelance projects.</p>
+        <p className="about-info">
+          Hi, I'm Fahad, a software developer specializing in AI & web applications.
+          Currently building AI-driven products and working on freelance projects.
+        </p>
 
-        <Button className="contact-button" variant="solid" color="primary"><Link to='/contact'>Contact Me</Link></Button>
-
+        <Button className="contact-button" variant="solid" color="primary">
+          <Link to='/contact'>Contact Me</Link>
+        </Button>
       </div>
-
     </div>
-  )
+  );
 }
 
 export default Index;
