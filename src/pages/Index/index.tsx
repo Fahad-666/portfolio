@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import './index.css';
-import { Button } from "@heroui/button";
+import { Button } from "@heroui/react";
 import { Link } from "react-router-dom";
 
 function Index() {
