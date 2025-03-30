@@ -1,0 +1,17 @@
+.what-i-do {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px;
+    margin-left: 45vw;
+    color: #000BFF;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.cards {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 30vh;
+}
