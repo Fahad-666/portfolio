@@ -1,7 +1,6 @@
 import Navbar from '@/components/Navbar'
 import './services.css';
-import { Card, CardHeader } from '@heroui/Card';
-import { Image } from '@heroui/Image';
+import { Card, CardHeader, Image } from '@heroui/react';
 
 export default function Services() {
   return (
