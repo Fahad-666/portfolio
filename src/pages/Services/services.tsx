@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/Navbar/Navbar';
 import './services.css';
 import { Card, CardHeader, Image } from '@heroui/react';
 
