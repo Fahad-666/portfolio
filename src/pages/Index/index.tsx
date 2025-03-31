@@ -7,7 +7,7 @@ import { FaUsers, FaCheckCircle, FaWrench } from "react-icons/fa";
 
 function Index() {
   return (
-    <div className="flex flex-col items-center w-screen min-h-screen bg-gradient-to-b from-white to-blue-600">
+    <div className="flex flex-col items-center min-w-[100%] min-h-screen bg-gradient-to-b from-white to-blue-600">
       <Navbar />
 
       <div className="about-box">
@@ -21,7 +21,6 @@ function Index() {
         </Button>
       </div>
 
-      {/* Footer with Stats */}
       <Footer />
     </div>
   );
